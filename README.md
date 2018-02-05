@@ -1,5 +1,5 @@
 # Laravel Identifiable
-![Build Status](https://travis-ci.org/halfpetal/laravel-module-identifiable.svg)
+[![Build Status](https://travis-ci.org/halfpetal/laravel-module-identifiable.svg?branch=master)](https://travis-ci.org/halfpetal/laravel-module-identifiable)
 [![Total Downloads](https://poser.pugx.org/halfpetal/laravel-identifiable/downloads)](https://packagist.org/packages/halfpetal/laravel-identifiable)
 [![Latest Stable Version](https://poser.pugx.org/halfpetal/laravel-identifiable/version)](https://packagist.org/packages/halfpetal/laravel-identifiable)
 [![License](https://poser.pugx.org/halfpetal/laravel-identifiable/license)](https://packagist.org/packages/halfpetal/laravel-identifiable)
