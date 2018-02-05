@@ -24,6 +24,30 @@ trait Identifiable
         });
     }
 
+    /**
+     * Wrapper around Model::findOrFail
+     *
+     * @param  string $identifier
+     * @return \Illuminate\Database\Eloquent\Model
+     */
+    public static function findByIdentifierOrFail($identifier)
+    {
+        $id = \Halfpetal\Laravel\Identifiable\Models\Identifier::where('identifier', $identifier)->firstOrFail();
+        return static::findOrFail($id->identifiable->id);
+    }
+
+    /**
+     * Wrapper around Model::find
+     *
+     * @param  string $identifier
+     * @return \Illuminate\Database\Eloquent\Model
+     */
+    public static function findByIdentifier($identifier)
+    {
+        $id = \Halfpetal\Laravel\Identifiable\Models\Identifier::where('identifier', $identifier)->first();
+        return static::find($id->identifiable->id);
+    }
+
     public function getRouteKeyName()
     {
         return 'identifier';
