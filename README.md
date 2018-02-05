@@ -1,8 +1,8 @@
 # Laravel Identifiable
 ![Build Status](https://travis-ci.org/halfpetal/laravel-module-identifiable.svg)
-![Downloads](https://poser.pugx.org/halfpetal/laravel-identifiabled/d/total.svg)
-![Stable Version](https://poser.pugx.org/halfpetal/laravel-identifiable/v/stable.svg)
-![License](https://poser.pugx.org/halfpetal/laravel-identifiable/license.svg)
+[![Total Downloads](https://poser.pugx.org/halfpetal/laravel-identifiable/downloads)](https://packagist.org/packages/halfpetal/laravel-identifiable)
+[![Latest Stable Version](https://poser.pugx.org/halfpetal/laravel-identifiable/version)](https://packagist.org/packages/halfpetal/laravel-identifiable)
+[![License](https://poser.pugx.org/halfpetal/laravel-identifiable/license)](https://packagist.org/packages/halfpetal/laravel-identifiable)
 
 ## Supported Versions
 | Laravel Version 	| Tested            	| Working           	|
