@@ -15,11 +15,13 @@ class CreateIdentifiersTable extends Migration
     {
         Schema::create('identifiers', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('identifier')->unique();
+            $table->string('identifier');
             $table->integer('identifiable_id');
             $table->string('identifiable_type');
             $table->timestamps();
             $table->softDeletes();
+
+            $table->unique(['identifier', 'identifiable_type']);
         });
     }
 
