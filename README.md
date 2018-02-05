@@ -1,6 +1,8 @@
 # Laravel Identifiable
-
-![Powered by Netflix](http://forthebadge.com/images/badges/powered-by-netflix.svg)
+![Build Status](https://travis-ci.org/halfpetal/laravel-module-identifiable.svg)
+![Downloads](https://poser.pugx.org/halfpetal/laravel-identifiabled/d/total.svg)
+![Stable Version](https://poser.pugx.org/halfpetal/laravel-identifiable/v/stable.svg)
+![License](https://poser.pugx.org/halfpetal/laravel-identifiable/license.svg)
 
 ## Supported Versions
 | Laravel Version 	| Tested            	| Working           	|
