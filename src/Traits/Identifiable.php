@@ -58,6 +58,18 @@ trait Identifiable
         return $this->identifier->identifier;
     }
 
+    /**
+     * Used in implicit model binding AND
+     * used in explicit model binding if no callback
+     * is specified.
+     *
+     * @param  string $identifier
+     * @return \Illuminate\Database\Eloquent\Model
+     */
+    public function resolveRouteBinding($identifier){
+        return \Halfpetal\Laravel\Identifiable\Models\Identifier::where('identifier', $identifier)->first()->identifiable;
+    }
+
     public function generateIdentifier()
     {
         $idLength = isset(static::$idLength) ? static::$idLength : 7;
