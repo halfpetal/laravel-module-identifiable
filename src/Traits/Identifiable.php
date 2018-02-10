@@ -32,8 +32,7 @@ trait Identifiable
      */
     public static function findByIdentifierOrFail($identifier)
     {
-        $id = \Halfpetal\Laravel\Identifiable\Models\Identifier::where('identifier', $identifier)->firstOrFail();
-        return static::findOrFail($id->identifiable->id);
+        return \Halfpetal\Laravel\Identifiable\Models\Identifier::where('identifier', $identifier)->firstOrFail()->identifiable;
     }
 
     /**
@@ -44,8 +43,7 @@ trait Identifiable
      */
     public static function findByIdentifier($identifier)
     {
-        $id = \Halfpetal\Laravel\Identifiable\Models\Identifier::where('identifier', $identifier)->first();
-        return static::find($id->identifiable->id);
+        return \Halfpetal\Laravel\Identifiable\Models\Identifier::where('identifier', $identifier)->first()->identifiable;
     }
 
     public function getRouteKeyName()
