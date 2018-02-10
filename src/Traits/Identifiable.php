@@ -12,7 +12,7 @@ trait Identifiable
     {
         parent::boot();
 
-        if(isset(static::$idNoAutoGenerate) && static::$idNoAutoGenerate) {
+        if(isset(static::$idAutoGeneration) && !static::$idAutoGeneration) {
             return;
         }
 
