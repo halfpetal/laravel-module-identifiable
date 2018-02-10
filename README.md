@@ -62,7 +62,7 @@ protected static $idLength = 12; // This will generate identifiers with a length
 ### Disable Auto-generation of Identifiers
 If for some strange reason you would like to have more control over the process (**and in turn also breaking route binding functionality if you don't generate the identifiers**) you can do that by setting the following variable:
 ```php
-protected static $idNoAutoGenerate = true;
+protected static $idAutoGenerate = false;
 ```
 
 This can be helpful in some cases where you want to allow custom identifiers; just remember though that each identifier **must be** unique to the model.
