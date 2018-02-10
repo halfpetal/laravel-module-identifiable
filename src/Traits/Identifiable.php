@@ -12,6 +12,10 @@ trait Identifiable
     {
         parent::boot();
 
+        self::deleting(function ($model) {
+            $model->identifier()->delete();
+        });
+
         if(isset(static::$idAutoGeneration) && !static::$idAutoGeneration) {
             return;
         }
