@@ -7,6 +7,7 @@
 ## Supported Versions
 | Laravel Version 	| Tested            	| Working           	|
 |-----------------	|-------------------	|-------------------	|
+| v5.6            	| :heavy_check_mark: 	| :heavy_check_mark: 	|
 | v5.5            	| :heavy_check_mark: 	| :heavy_check_mark: 	|
 
 ## About
